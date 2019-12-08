@@ -1,0 +1,19 @@
+.site-footer{
+    border-top: 0.3px solid #eaeaea;
+    a{
+        color: #000000;
+        font-weight: 100;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 4% 0 0 0;
+        &:hover{
+            color: #000000;
+            font-weight: 100;
+            text-decoration: none;
+        }
+        @media (min-width: 992px) {
+            font-size: 1.8rem;
+            margin: 3% 4% 0 0;
+        }
+    }
+}

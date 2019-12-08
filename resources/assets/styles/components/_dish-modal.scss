@@ -1,0 +1,188 @@
+.single-restaurant{
+    .modal-dialog{
+        margin: 0;
+        margin-bottom: 10%;
+        padding: 0;
+        @media (min-width: 576px) {
+            margin: auto;
+            max-width: 608px;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 100%;
+        }
+        .modal-content{
+            border: none;
+            border-radius: 0;
+            @media (min-width: 576px) {
+                background-color: transparent;
+                margin-top: 1.3%;
+            }
+
+            button.close{
+                padding: 3%;
+                @media (min-width: 576px) {
+                    padding: 4% 0 1.7%;
+                }
+
+                svg{
+                    width: 1.7rem;
+                    height: auto;
+                    margin: 2% 2% 0%;     
+                    @media (min-width: 576px) {
+                        margin: 14px 2px -1px;
+                    }           
+                }
+            }
+
+            .modal-body{
+                padding: 0;
+                @media (min-width: 576px) {
+                    background-color: #ffffff;
+                }
+                @media (min-width: 765px) {
+                    margin-bottom: 15%;
+                }
+                .dish-img{
+                    height: 253px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @media (min-width: 768px) {
+                        height: 272px;
+                    }
+                    @media (min-width: 992px) {
+                        height: 292px;
+                    }
+                }
+
+                .dish-header{
+                    @media (min-width: 768px) {
+                        padding-top: 2.8%;
+                    }
+                }
+
+                h4{
+                    margin: 19% auto 1% auto;
+                    font-size: 2.4rem;
+                    @media (min-width: 768px) {
+                        margin: 4.8% auto 1% auto;
+                        font-size: 3.5rem;
+                        display: inline-block
+                    }
+                }
+
+                .desktop-icons-div{
+                    @media (min-width: 768px) {
+                        position: absolute;
+                        top: 18px;
+                        left: -52px;
+                    }
+                }
+
+                p{
+                    font-size: 1.7rem;
+                    padding: 0.5% 16%;
+                    line-height: 20px;
+                    @media (min-width: 768px) {
+                        font-size: 1.4rem;
+                        padding: 2.2% 30% 0;
+                        line-height: 17px;
+                    }
+                }
+
+                svg{
+                    width: 2.4rem;
+                    margin-top: 0;
+                }
+
+                .price-div{
+                    padding-top: 1.2%;
+                    @media (min-width: 768px) {
+                        padding-top: 2.7%;
+                    }
+                    .right-hr hr{
+                        margin-left: -37%;
+                    }
+                    .left-hr hr{
+                        margin-right: -32%;
+                    }
+
+                    hr{
+                        width: 44%;
+                        margin-top: 13.5%;  
+                        @media (min-width: 768px) {
+                            width: 51%;
+                            margin-top: 7.5%;
+                        }                  
+                    }
+
+                    span{
+                        background-color: transparent;
+                        font-size: 2rem;
+                        padding-right: 8%;
+                        
+                        span{
+                            font-size: 1rem;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                h5{
+                    border-bottom: $border-bottom;
+                    display: inline-block;
+                    font-size: 1.7rem;
+                    margin-top: 18%;
+                    padding-bottom: 1%;
+                    @media (min-width: 768px) {
+                        font-size: 2.4rem;
+                        margin-top: 7%;
+                        font-weight: 100;
+                        padding-bottom: 0;
+                    }
+                }
+
+                .radio-input-div{
+                    text-align: left;
+                    @media (min-width: 768px) {
+                        text-align: center;
+                    }
+                }
+
+                .changes-h5-div{
+                    h5{
+                        margin-top: 16%;
+                        @media (min-width: 765px) {
+                            margin-top: 7.5%;
+                        }
+                    }
+                }
+
+                .check-box-input-div{
+                    @media (min-width: 765px) {
+                        margin-bottom: 9%;
+                    }
+                }
+
+                .quantity-div{
+                    @media (min-width: 765px) {
+                        padding: 4% 29%;
+                    }
+                }
+
+                .add-to-bag{
+                    color: #ffffff;
+                    background-color: #000000;
+                    font-size: 1.8rem;
+                    padding: 4% 12%;
+                    margin: 33% 0 14% 0;    
+                    @media (min-width: 765px) {
+                        padding: 2% 10%;
+                        margin: 10% 0 4% 0;
+                    }          
+                }
+            }
+        }
+    }
+}

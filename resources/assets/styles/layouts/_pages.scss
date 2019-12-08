@@ -1,0 +1,768 @@
+//Restaurants page
+.all-restaurants{
+    .page-title-div{
+        padding: 1rem 0 1rem 0;
+        h1{
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+    .restaurants-nav{
+        padding: 0 0 6% 0;
+        a{
+            padding: 0 4% 0 3%;;
+            color: $black;
+            font-size: 1.6rem;
+            font-weight: 300;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            &:hover{
+                color: $black;
+                text-decoration: none;
+            }
+            @media (min-width: 992px) {
+                padding: 0 1.9%;
+                &:first-child{
+                    padding: 0 1.9%;
+                }
+                &:last-child{
+                    padding: 0 1.9%;
+                }
+            }
+        }
+        @media (min-width: 992px) {
+            padding: 4% 0 3% 0;
+        }
+    }
+    img{
+        width: 100%;
+        height: 12.3rem;
+        @media (min-width: 992px) {
+            height: auto;
+        }
+    }
+    .col-6{
+        &:nth-child(odd){
+            padding: 0 0.7rem 1.4rem 2rem;
+        }
+        &:nth-child(even){
+            padding: 0 2rem 1.4rem 0.7rem;
+        }
+        @media (min-width: 992px) {
+            padding: 0% 1.7%;
+            margin-bottom: 3.7%;
+            &:nth-child(odd){
+                padding: 0% 1.7%;
+            }
+            &:nth-child(even){
+                padding: 0% 1.7%;
+            }
+        }
+    }
+
+    .restaurant-name-div{
+        background-color: #f9f4ea;
+        padding-top: 6%;
+        padding-bottom: 2%;
+
+        a{
+            color: $black;
+            &:hover{
+                text-decoration: none;
+                color: $black;
+            }
+            h2{
+                @media (min-width: 992px) {
+                    font-size: 3.8rem;
+                    padding: 2% 0 1%;
+                    margin: 0;
+                }
+            }
+            h4{
+                font-weight: 100;
+                @media (min-width: 992px) {
+                    font-size: 2.4rem;
+                    padding: 0 0 2%;                
+                }
+            }
+        }
+    }
+}
+
+
+//Single restaurant page
+.single-restaurant{
+    @media (min-width: 992px) {
+        paading: 0 11.8%
+    }
+    .restaurant-pic-div{
+        padding: 0;
+        height: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: 768px) {
+            height: 30rem;
+        }
+        @media (min-width: 992px) {
+            height: 35rem;
+        }
+        @media (min-width: 1200px) {
+            height: 40rem;
+        }
+        img{
+            width:100%;
+            height: auto;
+        }
+    }
+
+    h1{
+        font-size: 3.5rem;
+        margin-top: 5.5%;
+        @media (min-width: 992px) {
+            font-size: 5.5rem;
+            margin-top: 2.5%;            
+        }
+    }
+
+    .chef-name{
+        font-size: 2.4rem;
+        margin-top: -3%;
+        margin-bottom: 1%;
+        @media (min-width: 992px) {
+            margin-top: -1%;
+            font-size: 3rem;        
+        }           
+    }
+
+    .opening-hours{
+        font-weight: 100;
+        font-size: 1.2rem;
+        display: inline;
+        position: relative;  
+        @media (min-width: 993px) {
+            font-size: 1.8rem;
+        }      
+
+        svg{
+            @media (min-width: 992px) {
+                width: 17px;
+                height: auto;
+            }
+        }
+    }
+
+    .meal-types-nav{
+        margin: 4% 0;
+        @media (min-width: 992px) {
+            margin: 4% 0 -2px 0;
+        }
+
+        a{
+            padding: 2.2%;
+            font-weight: 100;
+            color: $black;
+            font-size: 1.7rem;
+            text-decoration: none;
+            &:active{
+                border-bottom: 2px solid #de9200;
+                text-decoration: none;
+            }
+            @media (min-width: 992px) {
+                padding: 1%;
+                font-size: 2.6rem;
+            }
+        }
+    }
+    
+    .row{
+        margin: 0!important;
+    }
+
+    .dishes-container{
+        padding: 3.39% 0;
+        @media (min-width: 992px) {
+            padding: 2.7% 8.4%;
+        }
+
+        >.col-12{
+            padding: 0 1.6%;
+        }
+        .col-6{
+            padding: 0 3.5%;
+            margin-bottom: 6%;
+            @media (min-width: 992px) {
+                padding: 0 2.3%;
+                margin-bottom: 4.4%;
+            }
+        }
+        .meal-div{
+            margin-bottom: 5%;
+            span{
+                margin-left: -45%;
+                @media (min-width: 992px) {
+                    margin-left: 18%;
+                    font-size: 3rem;
+                }
+            }
+        }
+        .dish-content-div{
+            background-color: #f9f4ea;
+            min-height: 28rem;
+            margin-bottom: 2.3rem;
+            padding-bottom: 4%;
+            position: relative;
+            @media (min-width: 992px) {
+                min-height: 41.6rem;
+            }
+
+            a{
+                color: $black;
+                &:hover{
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+            
+            img{
+                width: 100%;
+            }
+
+            svg{
+                width: 1.7rem;
+                height: auto;
+                @media (min-width: 992px) {
+                    width: 2.1rem;
+                    margin-top: 5%;                    
+                }
+            }
+
+            h4{
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-top: 9%;        
+                @media (min-width: 992px) {
+                    font-size: 2.3rem;
+                    margin-top: 7%;                
+                }    
+            }
+    
+            p{
+                font-size: 1.3rem;
+                font-weight: 100;
+                padding: 2% 9% 0 9%;
+                line-height: 1.79rem;
+                margin-bottom: 0;
+
+                @media (min-width: 992px) {
+                    font-size: 2rem;
+                    padding: 6% 9% 0 9%;
+                    line-height: 2.5rem;
+                }
+            }
+            .price-div{
+                position: absolute;
+                bottom: 0;
+                padding-bottom: 5%;
+
+                span{
+                    background-color: #f9f4ea;
+                    font-size: 1.4rem;  
+                    @media (min-width: 992px) {
+                        font-size: 2.1rem;
+                    }                              
+                }
+            }
+            hr{
+                width: 100%;
+                margin-top: 1.2rem;
+                margin-bottom: 1rem;
+                @media (min-width: 992px) {
+                    width: 100%;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+//Home page
+.home{
+
+    .row{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-header-div{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 19% 5% 20% 5%;
+        @media (min-width: 992px) {
+            padding: 16.3% 22.8% 16.7% 23%;               
+        }
+    }
+
+    .search-div{
+        background-color: rgba(255, 255, 255, 0.88);
+        padding: 5% 10% 6% 10%;
+        @media (min-width: 992px) {
+            padding: 5% 10% 5.5% 17%;  
+        }
+        
+        p{
+            padding: 0% 8%;
+            line-height: 22px;
+            @media (min-width: 768px) {
+                line-height: 29px;
+                font-size: 2.5rem;   
+            }
+            @media (min-width: 992px) {
+                font-size: 3.5rem;
+                font-weight: 100;
+                letter-spacing: 0;
+                line-height: 4rem;    
+                padding: 0% 2%;   
+            }
+        }
+
+        .search-input-wrapper{
+            position: relative;
+            width: 90%;
+            svg{
+                left: 3.5%;
+                position: absolute;
+                top: 23%;
+                @media (min-width: 768px) {
+                    left: 4.5%;
+                    position: absolute;
+                    top: 39%;
+                }
+                @media (min-width: 992px) {
+                    left: 4.5%;
+                    position: absolute;
+                    top: 31%;
+                }
+            }
+            input{
+                background-color: transparent;
+                padding: 6% 12%;
+                @media (min-width: 768px) {
+                    font-size: 2rem;
+                }
+                @media (min-width: 992px) {
+                    padding: 4% 0 4% 12.3%;
+                    margin-top: 2.4%;
+                    border-radius: 4px;
+                    font-size: 2.2rem;
+                    font-weight: 100; 
+                }
+            }
+            #autocomplete-items{
+                position: absolute;
+                background-color: $white;
+                z-index: 99;
+                top: 100%;
+                left: 2%;
+                right: 0;
+                width: 96%;
+                padding: 2% 10.5%;
+                .items-header{
+                    color: #d7d7d7;
+                    font-size: 1.3rem;
+                    padding: 3% 0;
+                }
+                .autocomplete-item{
+                    display: relative;
+                    cursor: pointer;
+                    color: $black;
+                    font-size: 1.3rem;
+                    padding: 1% 0;
+                    &:hover{
+                        background-color: #fafafa;
+                    }
+
+                    a, a:hover, a:active{
+                        text-decoration: none;
+                        color: $black;
+                        display: block;
+                        height: 100%;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-nav-div{
+        display: flex;
+        justify-content: space-around;
+        background-color: #fafafa;
+        padding: 11% 18%;
+        @media (min-width: 768px) {
+            padding: 5% 4%;
+        }
+
+        .home-nav-item{
+            display: flex;
+            background-color: rgba(232, 196, 122, 0.8);
+            color: $black;
+            padding: 4% 7%;
+            font-size: 1.3rem;
+            &:hover,&:active{
+                text-decoration: none;
+                color: $black;
+            }
+            @media (min-width: 768px) {
+                padding: 4% 14%;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .front-page-header{
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 100;
+        margin: 16% 0 4% 0;
+        @media (min-width: 768px) {
+            font-size: 2.4rem;
+            margin: 12% 0 4% 0;
+        }
+        @media (min-width: 992px) {
+            font-size: 3rem;
+            margin: 9.8% 0 2.7% 0;
+        }
+    }
+
+    .carousel-div{
+        padding: 0 0 0 5%;
+        @media (min-width: 992px) {
+            padding: 0;            
+        }
+    }
+
+    #lightSlider-popular-restaurants, #lightSlider-chef-restaurants{
+        .lslide{
+            background-color: #f7e0b2;
+        }
+
+        .head-img-div{
+
+            img{
+                width: 207px;
+                height: 224px;
+            }
+
+        }
+
+        .details-div{
+            padding: 13% 0;
+        }
+
+    }
+
+    .desktop-carousel{
+
+        padding: 0 11.35%;
+
+        .col-4{
+            padding: 0 0.5%;
+        }
+
+        .head-img-div{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .details-div{
+            background-color: #f7e0b2;
+            padding: 8% 0;
+
+            h2{
+                font-size: 4rem;
+                margin-bottom: 0;
+            }
+
+            p{
+                font-size: 2.5rem;
+            }
+        }
+        a, a:hover, a:active{
+            font-size: 3rem;
+            color: $black;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 0.65%;
+            padding-right: 0.5%;
+
+            svg{
+                width: 24px;
+                height: 18px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .icons-meaning-div{
+        background-color: #fafafa;
+        padding: 4%;
+        margin-top: 22%;
+        @media (min-width: 768px) {
+            margin-top: 13%;           
+        }
+        @media (min-width: 992px) {
+            margin-top: 1%;           
+        }
+
+        h2{
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        p{
+            font-size: 1.4rem;
+            @media (min-width: 768px) {
+                font-size: 2.4rem;
+            }
+            @media (min-width: 992px) {
+                font-size: 3rem;
+                font-weight: 100;
+            }
+        }
+
+        .front-page-header{
+             margin: 6% 0 3%;
+             @media (min-width: 992px) {
+                margin: 5% 0 1.8%;
+            }
+        }
+
+        svg{
+            width: 50%;
+            @media (min-width: 768px) {
+                width: 8.7rem;
+            }
+        }
+        .icon-def{
+            margin-top: -4%;
+            text-align: center;
+            @media (min-width: 768px) {
+                margin-top: 0; 
+            }
+            @media (min-width: 992px) {
+                margin-top: 1%; 
+            }
+        }
+        .spicy-div{
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: center;
+            }
+            @media (min-width: 992px) {
+                text-align: right;
+                padding-right: 1.7%;
+            }
+        }
+        .vegan-div{
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: center;
+            }
+            @media (min-width: 992px) {
+                text-align: left;
+                padding-left: 1.95%;
+            }
+        }
+    }
+
+    .chef-of-the-week-div{
+        @media (min-width: 992px) {
+            padding: 0 11.3%;
+        }
+
+        .front-page-header{
+            @media (min-width: 992px) {
+                margin: 6% 0 3.2% 0;;
+            }
+        }
+        .d-relative{
+            padding: 0% 5%;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .chef-name{
+            background-color: rgba(255,255,255,0.8);
+            position: absolute;
+            width: 92%;
+            bottom: 0;
+            padding: 1%;
+            font-size: 3rem;
+            @media (min-width: 992px) {
+                width: 77.8%;
+                bottom: 0;
+                padding: 0%;
+                font-size: 4rem;
+            }
+        }
+        p{
+            font-size: 1.3rem;
+            font-weight: 300;
+            padding: 0;
+            @media (min-width: 768px) {
+                font-size: 2.3rem;
+            }
+            @media (min-width: 992px) {
+                font-size: 3rem;
+                font-weight: 100;
+            }
+        }
+        .chef-details-p{
+            padding: 6% 5%;
+            line-height: 16px;
+            margin-bottom: 7%;
+            @media (min-width: 768px) {
+                padding: 1% 5% 0 0;
+                line-height: 23px;
+                margin-bottom: 1%;
+            }
+            @media (min-width: 992px) {
+                padding: 0;
+                line-height: 32px;
+                margin-bottom: 0;
+            }
+            p{
+                @media (min-width: 768px) {
+                    font-size: 1.8rem;
+                } 
+            }
+        }
+        .chefs-restaurants-p{
+            padding: 0 0 2% 1%;
+            @media (min-width: 768px) {
+                padding: 3% 0 2% 3%;
+            }
+            @media (min-width: 992px) {
+                padding: 5% 0 0.3% 3.5%;
+            }
+        }
+        .chefs-rest-div{
+            padding-left: 6%;
+            @media (min-width: 768px) {
+                padding-left: 5%;
+            }
+        }
+        #lightSlider-chef-restaurants{
+            .head-img-div{
+                img{
+                    width: 154px;
+                    height: 149px;
+                }
+            }
+        }
+        .chef-restaurants-desktop{
+            .restaurant-wrapper{
+                padding: 0 2.8% 0 0;
+            }
+            .head-img-div{
+                width: 100%;
+            }
+            .details-div{
+                background-color: #f9f4ea;
+                padding: 11% 9% 11% 9%;
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .about-us-div{
+        padding: 10% 2% 2% 2%;
+        margin-top: 0;
+        background-color: #fafafa;
+        @media (min-width: 768px) {
+            margin-top: 12%;
+            padding: 2%;
+        }
+        @media (min-width: 992px) {
+            padding: 5.8% 15% 2%;
+            margin-top: 8%;
+        }
+        .about-us-header-div{
+            text-align: center;
+            @media (min-width: 992px) {
+                text-align: left;
+                padding: 0;
+            }
+
+            .front-page-header{
+                margin: 9% 0 1% 0;
+                @media (min-width: 992px) {
+                    margin: 0% 0 11% 0;
+                }
+            }
+        }
+        .about-us-content-div{
+            text-align: center;
+            @media (min-width: 992px) {
+                text-align: left;
+                padding: 0;
+            }
+
+            .about-us-p{
+                font-size: 14px;
+                font-weight: 100;
+                padding: 0 8%;
+                @media (min-width: 992px) {
+                    padding: 0;
+                    font-size: 2.2rem;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .site-logo{
+            width: 43%;
+            height: auto;
+            margin-top: 9%;
+            @media (min-width: 768px) {
+                width: 20%;
+            }
+            @media (min-width: 992px) {
+                width: 45%;
+                margin: 36% 0 0 23%;
+            }
+        }
+        .svg-wrapper{
+            padding: 10% 2% 2% 2%;
+            text-align: center;
+            @media (min-width: 768px) {
+                padding: 5% 0 0;
+                margin: 0;
+            }
+            @media (min-width: 992px) {
+                padding: 0% 4% 2% 0%;
+                text-align: left;
+            }
+            svg{
+                width: 100%;
+                @media (min-width: 768px) {
+                    width: 20%;
+                }
+                @media (min-width: 992px) {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
